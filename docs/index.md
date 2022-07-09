@@ -1,37 +1,80 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
 
-You can use the [editor on GitHub](https://github.com/SarkadiDominik/sarkadi.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
 
-### Markdown
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
 
-```markdown
-Syntax highlighted code block
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
 
-- Bulleted
-- List
+.header-right {
+  float: right;
+}
 
-1. Numbered
-2. List
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
 
-**Bold** and _Italic_ and `Code` text
+<div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
 
-[Link](url) and ![Image](src)
-```
+<div style="padding-left:20px">
+  <h1>Responsive Header</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>Some content..</p>
+</div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SarkadiDominik/sarkadi.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
