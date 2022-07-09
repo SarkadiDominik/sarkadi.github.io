@@ -1,1 +1,0 @@
-# sarkadi.github.io
